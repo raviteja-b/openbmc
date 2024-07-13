@@ -73,7 +73,7 @@ FEATURE_PACKAGES_obmc-dmtf-pmci ?= "packagegroup-obmc-apps-dmtf-pmci"
 # this package offline and making the software bill of materials
 # incorrect.
 FEATURE_PACKAGES_obmc-webui ?= "packagegroup-obmc-apps-webui"
-
+FEATURE_PACKAGES_obmc-authenticator ?= "packagegroup-obmc-apps-authenticator"
 # FIXME: phosphor-net-ipmi depends on phosphor-ipmi-host !?!? and
 # cannot be built on core-qemu machines because of the dependency
 # tree under phosphor-ipmi-host

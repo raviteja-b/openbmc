@@ -33,6 +33,7 @@ PACKAGES = " \
         ${PN}-user-mgmt-ldap \
         ${PN}-dmtf-pmci \
         ${PN}-webui \
+        ${PN}-authenticator \
         "
 
 SUMMARY:${PN}-bmc-state-mgmt = "BMC state management"
@@ -178,6 +179,11 @@ SUMMARY:${PN}-telemetry = "Telemetry solution"
 RDEPENDS:${PN}-telemetry = " \
         telemetry \
         "
+SUMMARY:${PN}-authenticator = "authenticator solution"
+RDEPENDS:${PN}-authenticator = " \
+        google-authenticator-libpam \
+        pam-google-authenticator \
+"
 
 SUMMARY:${PN}-user-mgmt = "User management applications"
 RDEPENDS:${PN}-user-mgmt = " \
